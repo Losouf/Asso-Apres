@@ -1,0 +1,84 @@
+.site-footer {
+    background: var(--primary);
+    color: #f1f1f1;
+    padding: 30px 20px;
+    font-size: 0.9em;
+}
+
+.footer-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.footer-brand {
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: var(--accent);
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #f1f1f1;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--accent);
+}
+
+.footer-legal {
+    color: #ccc;
+    font-size: 0.85em;
+}
+
+.footer-dev {
+    margin-top: 15px;
+    font-size: 0.8em;
+    color: #aaa;
+}
+
+.footer-dev a {
+    color: #f1f1f1;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-dev a:hover {
+    color: var(--accent);
+}
+
+
+.footer-socials {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-socials a {
+    background-color: #f1f1f1;
+    color: var(--primary);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+}
+
+.footer-socials a:hover {
+    background-color: var(--accent);
+    color: #000;
+    transform: scale(1.1);
+}

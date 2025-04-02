@@ -1,0 +1,77 @@
+.navbar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+    clip-path: circle(25px at calc(0% + 45px) 45px);
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+    font-family: 'Roboto', sans-serif;
+}
+
+#active:checked ~ .navbar-overlay {
+    clip-path: circle(75%);
+}
+
+.navbar-toggle-btn {
+    position: fixed;
+    z-index: 2;
+    left: 20px;
+    top: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+    transition: all 0.3s ease-in-out;
+}
+
+#active:checked ~ .navbar-toggle-btn {
+    background: #fff;
+    color: #c850c0;
+}
+
+#active:checked ~ .navbar-toggle-btn i:before {
+    content: "\f00d";
+}
+
+.navbar-overlay ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+}
+
+.navbar-overlay ul li {
+    margin: 15px 0;
+}
+
+.navbar-overlay ul li a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 5px 30px;
+    color: #fff;
+    position: relative;
+    line-height: 50px;
+    border: transparent solid 2px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.navbar-overlay ul li a:hover {
+    border: #fff solid 2px;
+    border-radius: 10px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
