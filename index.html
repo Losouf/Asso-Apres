@@ -26,13 +26,13 @@
 
     <div class="navbar-overlay">
         <ul>
-        <li><a href="#Accueil">Accueil</a></li>
-        <li><a href="#APropos">À propos</a></li>
-        <li><a href="#Bureau">Bureau</a></li>
-        <li><a href="#Prestataires">Prestataires</a></li>
-        <li><a href="#Services">Services</a></li>
-        <li><a href="#">Contribuer</a></li>
-        <li><a href="#Contact">Contact</a></li>
+            <li><a href="#Accueil">Accueil</a></li>
+            <li><a href="#APropos">À propos</a></li>
+            <li><a href="#Bureau">Bureau</a></li>
+            <li><a href="#Prestataires">Prestataires</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Contribuer">Contribuer</a></li>
+            <li><a href="#Contact">Contact</a></li>
         </ul>
     </div>
 
@@ -268,17 +268,33 @@
             </div>
         </section>
 
+        <section class="presentation" id="Contribuer">
+            <div class="container presentation-grid">
+                <div class="presentation-text">
+                    <h2>Contribuer</h2>
+                    <p>
+                        Rejoignez nous ou faites un don pour soutenir l'association.
+                    </p>
+                    <a href="Contribuer.html" class="cta-btn">soutenir</a>
+                </div>
+            </div>
+        </section>
+
         <section class="contact-form" id="Contact">
             <h2>Nous Contacter</h2>
-            <form>
-              <div class="form-group double">
-                <input type="text" placeholder="Nom">
-                <input type="text" placeholder="Prénom">
-              </div>
-              <input type="email" placeholder="Votre e-mail">
-              <input type="text" placeholder="Sujet">
-              <textarea placeholder="Votre message"></textarea>
-              <button type="submit">Envoyer</button>
+            <form action="php/SendMail.php" method="post">
+                <div class="form-group double">
+                    <input type="text" placeholder="Nom" required>
+                    <input type="text" placeholder="Prénom" required> 
+                </div>
+                <input type="email" placeholder="Votre e-mail" required>
+                <input type="text" placeholder="Sujet" required>
+                <textarea placeholder="Votre message" required></textarea>
+
+                <!-- Bots -->
+                <input type="text" name="website" style="display: none">
+
+                <button type="submit">Envoyer</button>
             </form>
         </section>   
     </div>
@@ -289,7 +305,7 @@
             &copy; 2024 – <strong>APRES</strong>
           </p>
           <p class="footer-links">
-            <a href="Mentions.html">Mentions légales</a>
+            <a href="MentionsLégales.html">Mentions légales</a>
           </p>
           <!--<p class="footer-legal">
             Organisme de formation enregistré sous le n° <strong>84010224301</strong> auprès du préfet de région Auvergne-Rhône-Alpes.<br />

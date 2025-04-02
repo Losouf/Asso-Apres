@@ -4,7 +4,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background: linear-gradient(-135deg, #c850c0, #4158d0);
+    background: linear-gradient(-135deg, var(--accent), var(--bg));
     clip-path: circle(25px at calc(0% + 45px) 45px);
     transition: all 0.3s ease-in-out;
     z-index: 1;
@@ -28,13 +28,13 @@
     font-size: 20px;
     color: #fff;
     cursor: pointer;
-    background: linear-gradient(-135deg, #c850c0, #4158d0);
+    background: linear-gradient(-135deg,var(--accent), var(--bg));
     transition: all 0.3s ease-in-out;
 }
 
 #active:checked ~ .navbar-toggle-btn {
     background: #fff;
-    color: #c850c0;
+    color: var(--accent);
 }
 
 #active:checked ~ .navbar-toggle-btn i:before {
